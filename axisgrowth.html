@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AxisGrowth 軸成｜成效型數位行銷與 MarTech 應用</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#10182B;
+    --ink-soft:#1B2740;
+    --paper:#EDF0ED;
+    --paper-dim:#E1E6E1;
+    --text-dark:#131A26;
+    --text-mute:#4B5763;
+    --text-light:#EDF0EE;
+    --text-light-mute:#AAB4C2;
+    --green:#2F8F5B;
+    --green-deep:#1F6B44;
+    --amber:#D98E3F;
+    --blue-slate:#5E7FA3;
+    --plum:#93688C;
+    --grey-mid:#8890A0;
+    --alert:#C1543F;
+    --line:#C7CDC8;
+    --line-dark:#2C3A52;
+    --serif:'Noto Serif TC', serif;
+    --sans:'Noto Sans TC', sans-serif;
+    --mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--text-dark);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  section{position:relative;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; line-height:1.28; letter-spacing:0.01em;}
+  p{max-width:62ch;}
+  :focus-visible{outline:2.5px solid var(--green); outline-offset:3px;}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(237,240,237,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 32px; max-width:1180px; margin:0 auto;
+  }
+  .brand{
+    font-family:var(--serif); font-weight:700; font-size:1.28rem;
+    display:flex; align-items:baseline; gap:6px;
+  }
+  .brand span{font-family:var(--mono); font-size:0.7rem; color:var(--green-deep); font-weight:500;}
+  nav.links{display:flex; gap:32px; font-size:0.95rem; color:var(--text-mute);}
+  nav.links a{position:relative; padding:4px 0;}
+  nav.links a:hover{color:var(--text-dark);}
+  nav.links a::after{
+    content:''; position:absolute; left:0; bottom:-2px; height:1.5px; width:0;
+    background:var(--green); transition:width 0.25s ease;
+  }
+  nav.links a:hover::after{width:100%;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:11px 22px; border-radius:2px; font-size:0.92rem; font-weight:600;
+    background:var(--ink); color:var(--text-light);
+    border:1px solid var(--ink);
+    transition:background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    cursor:pointer;
+  }
+  .btn:hover{background:var(--green-deep); border-color:var(--green-deep); transform:translateY(-1px);}
+  .btn.ghost{
+    background:transparent; color:var(--text-dark); border:1px solid var(--line);
+  }
+  .btn.ghost:hover{border-color:var(--text-dark); background:transparent; color:var(--text-dark);}
+  .nav-cta{display:none;}
+  @media(min-width:840px){.nav-cta{display:inline-flex;}}
+  @media(max-width:839px){nav.links{display:none;}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--ink); color:var(--text-light);
+    padding:96px 0 64px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+  }
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+  .hero h1{
+    font-size:clamp(2.1rem, 4.2vw, 3.4rem);
+    color:var(--text-light);
+    margin-bottom:26px;
+  }
+  .hero p.lede{
+    color:var(--text-light-mute); font-size:1.08rem; margin-bottom:34px; max-width:46ch;
+  }
+  .hero-ctas{display:flex; gap:18px; flex-wrap:wrap; align-items:center; margin-bottom:56px;}
+  .hero-ctas a.text-link{
+    font-size:0.94rem; color:var(--text-light-mute); border-bottom:1px solid var(--line-dark); padding-bottom:2px;
+    transition:color 0.2s ease, border-color 0.2s ease;
+  }
+  .hero-ctas a.text-link:hover{color:var(--text-light); border-color:var(--text-light-mute);}
+
+  .stat-strip{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+    border-top:1px solid var(--line-dark);
+    padding-top:28px;
+  }
+  .stat-strip div{padding-right:20px; border-right:1px solid var(--line-dark);}
+  .stat-strip div:last-child{border-right:none;}
+  .stat-num{
+    font-family:var(--mono); font-size:1.7rem; color:var(--green);
+    display:block; margin-bottom:6px;
+  }
+  .stat-strip small{color:var(--text-light-mute); font-size:0.8rem; line-height:1.5; display:block;}
+
+  /* chart */
+  .chart-card{
+    background:var(--ink-soft); border:1px solid var(--line-dark); padding:26px 26px 20px;
+  }
+  .chart-top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;}
+  .chart-top .label{font-size:0.82rem; color:var(--text-light-mute);}
+  .chart-top .val{font-family:var(--mono); font-size:1.5rem; color:var(--text-light);}
+  .chart-top .delta{font-family:var(--mono); font-size:0.85rem; color:var(--green); margin-left:8px;}
+  #chartPath{
+    stroke-dasharray:900; stroke-dashoffset:900;
+    animation:draw 1.8s cubic-bezier(.4,.1,.2,1) 0.3s forwards;
+  }
+  #chartFill{opacity:0; animation:fadein 1.2s ease 1.4s forwards;}
+  .chart-dot{opacity:0; animation:fadein 0.5s ease forwards;}
+  .chart-dot:nth-child(1){animation-delay:0.6s;}
+  .chart-dot:nth-child(2){animation-delay:1.0s;}
+  .chart-dot:nth-child(3){animation-delay:1.4s;}
+  .chart-dot:nth-child(4){animation-delay:1.8s;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  @keyframes fadein{to{opacity:1;}}
+  @media (prefers-reduced-motion: reduce){
+    #chartPath{stroke-dashoffset:0;}
+    #chartFill,.chart-dot{opacity:1;}
+  }
+  .chart-caption{
+    display:flex; justify-content:space-between; margin-top:12px;
+    font-family:var(--mono); font-size:0.72rem; color:var(--text-light-mute);
+  }
+
+  /* ---------- SECTION HEADS ---------- */
+  .sec-head{max-width:640px; margin-bottom:52px;}
+  .sec-head h2{font-size:clamp(1.6rem,2.8vw,2.3rem); margin-bottom:16px;}
+  .sec-head p{color:var(--text-mute); font-size:1rem;}
+  .section-pad{padding:96px 0;}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:7fr 5fr; gap:22px; margin-bottom:22px;
+  }
+  @media(max-width:840px){.services-grid{grid-template-columns:1fr;}}
+  .panel{padding:38px; position:relative;}
+  .panel-seo{
+    background:var(--paper); border:1px solid var(--line); border-left:4px solid var(--green);
+  }
+  .panel-auto{
+    background:var(--ink); color:var(--text-light); border-radius:6px;
+  }
+  .panel-analytics{
+    background:var(--paper); border:1px solid var(--amber); border-radius:2px;
+    display:grid; grid-template-columns:1.1fr 1fr; gap:36px; align-items:center; padding:38px;
+  }
+  @media(max-width:720px){.panel-analytics{grid-template-columns:1fr;}}
+  .panel-kicker{
+    font-family:var(--mono); font-size:0.75rem; color:var(--green-deep); margin-bottom:14px; display:block;
+  }
+  .panel-auto .panel-kicker{color:var(--amber);}
+  .panel h3{font-size:1.45rem; margin-bottom:14px;}
+  .panel p{color:var(--text-mute); font-size:0.96rem; margin-bottom:20px;}
+  .panel-auto p{color:var(--text-light-mute);}
+  .taglist{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px;}
+  .taglist span{
+    font-size:0.8rem; padding:5px 12px; border:1px solid var(--line); border-radius:20px; color:var(--text-mute);
+  }
+  .panel-auto .taglist span{border-color:var(--line-dark); color:var(--text-light-mute);}
+
+  .seo-bars{display:flex; align-items:flex-end; gap:10px; height:90px; margin-top:8px;}
+  .seo-bars div{flex:1; background:var(--green); opacity:0.85; border-radius:1px 1px 0 0;}
+  .seo-bars div:nth-child(1){height:38%;}
+  .seo-bars div:nth-child(2){height:55%;}
+  .seo-bars div:nth-child(3){height:70%;}
+  .seo-bars div:nth-child(4){height:100%; background:var(--green-deep);}
+
+  .flow-diagram{display:flex; flex-direction:column; gap:10px; margin-top:20px;}
+  .flow-node{
+    display:flex; align-items:center; gap:10px; font-size:0.82rem; color:var(--text-light-mute);
+  }
+  .flow-dot{width:8px; height:8px; border-radius:50%; background:var(--amber); flex-shrink:0;}
+  .flow-node:last-child .flow-dot{background:var(--green);}
+  .flow-line{width:1px; height:14px; background:var(--line-dark); margin-left:3.5px;}
+
+  .mini-dashboard{
+    background:var(--ink-soft); padding:20px; border-radius:2px;
+  }
+  .mini-dashboard .row{display:flex; justify-content:space-between; font-family:var(--mono); font-size:0.75rem; color:var(--text-light-mute); margin-bottom:10px;}
+  .mini-dashboard .row b{color:var(--amber); font-weight:500;}
+  .mini-bars{display:flex; align-items:flex-end; gap:5px; height:52px;}
+  .mini-bars div{flex:1; background:var(--amber); opacity:0.9;}
+
+  /* ---------- MARTECH TOOLS ---------- */
+  .tools-section{background:var(--ink); color:var(--text-light);}
+  .tool-tabs{
+    display:flex; gap:4px; border-bottom:1px solid var(--line-dark); margin-bottom:40px; flex-wrap:wrap;
+  }
+  .tool-tab{
+    font-family:var(--sans); font-size:0.92rem; font-weight:500; color:var(--text-light-mute);
+    background:transparent; border:none; padding:14px 6px; margin-right:26px; cursor:pointer;
+    position:relative; border-bottom:2px solid transparent; transition:color 0.2s ease;
+  }
+  .tool-tab:hover{color:var(--text-light);}
+  .tool-tab[aria-selected="true"]{color:var(--text-light); border-bottom-color:var(--green);}
+  .tool-panel[hidden]{display:none;}
+  .tool-shell{
+    background:var(--ink-soft); border:1px solid var(--line-dark); padding:36px;
+  }
+  .tool-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  @media(max-width:860px){.tool-grid{grid-template-columns:1fr;}}
+  .field{margin-bottom:18px;}
+  .field label{display:block; font-size:0.82rem; color:var(--text-light-mute); margin-bottom:6px;}
+  .field input[type=text], .field input[type=number], .field textarea, .field select{
+    width:100%; background:var(--ink); border:1px solid var(--line-dark); color:var(--text-light);
+    padding:10px 12px; font-family:var(--sans); font-size:0.92rem; border-radius:2px;
+  }
+  .field textarea{resize:vertical; min-height:90px; line-height:1.6;}
+  .field input:focus, .field textarea:focus, .field select:focus{border-color:var(--green);}
+  .field-row{display:flex; gap:12px;}
+  .field-row .field{flex:1;}
+  .hint{font-size:0.76rem; color:var(--text-light-mute); margin-top:4px; display:block;}
+
+  .score-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:10px;}
+  .score-head .score-num{font-family:var(--mono); font-size:1.9rem;}
+  .score-label{font-size:0.85rem; padding:3px 10px; border-radius:20px;}
+  .score-bar-track{height:8px; background:var(--ink); border-radius:4px; overflow:hidden; margin-bottom:28px;}
+  .score-bar-fill{height:100%; border-radius:4px; transition:width 0.5s ease, background 0.5s ease;}
+  .checklist{list-style:none; display:flex; flex-direction:column; gap:12px;}
+  .checklist li{display:flex; gap:10px; align-items:flex-start; font-size:0.88rem; color:var(--text-light-mute);}
+  .check-dot{width:9px; height:9px; border-radius:50%; margin-top:5px; flex-shrink:0;}
+  .check-dot.pass{background:var(--green);}
+  .check-dot.warn{background:var(--amber);}
+  .check-dot.fail{background:var(--alert);}
+  .checklist strong{color:var(--text-light); font-weight:500;}
+
+  .step-list{display:flex; flex-direction:column; gap:0; margin:20px 0 24px;}
+  .step-node{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--ink); border:1px solid var(--line-dark); padding:11px 14px; font-size:0.86rem;
+  }
+  .step-node .step-remove{
+    background:none; border:none; color:var(--text-light-mute); cursor:pointer; font-size:1rem; line-height:1;
+    padding:2px 6px;
+  }
+  .step-node .step-remove:hover{color:var(--alert);}
+  .step-connector{width:1px; height:16px; background:var(--line-dark); margin-left:14px;}
+  .add-step-row{display:flex; gap:10px;}
+  .add-step-row select{flex:1;}
+
+  .funnel-row{display:grid; grid-template-columns:110px 1fr 70px; gap:12px; align-items:center; margin-bottom:10px; font-size:0.82rem;}
+  .funnel-track{height:20px; background:var(--ink); border-radius:2px; overflow:hidden;}
+  .funnel-fill{height:100%; background:var(--amber);}
+  .funnel-row:first-child .funnel-fill{background:var(--green);}
+  .funnel-num{font-family:var(--mono); text-align:right; color:var(--text-light);}
+
+  .seg-control{display:inline-flex; border:1px solid var(--line-dark); border-radius:2px; overflow:hidden;}
+  .seg-control button{
+    background:var(--ink); color:var(--text-light-mute); border:none; padding:8px 16px; font-size:0.84rem;
+    cursor:pointer; border-right:1px solid var(--line-dark);
+  }
+  .seg-control button:last-child{border-right:none;}
+  .seg-control button[aria-pressed="true"]{background:var(--green-deep); color:var(--text-light);}
+  .channel-filters{display:flex; flex-wrap:wrap; gap:14px; margin:18px 0 30px;}
+  .chan-check{display:flex; align-items:center; gap:7px; font-size:0.85rem; color:var(--text-light-mute); cursor:pointer;}
+  .chan-check input{accent-color:var(--green);}
+  .chan-swatch{width:9px; height:9px; border-radius:2px; display:inline-block;}
+
+  .tool-status{font-size:0.82rem; margin-bottom:14px;}
+  .kpi-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-dark); margin-bottom:32px;}
+  @media(max-width:720px){.kpi-grid{grid-template-columns:repeat(2,1fr);}}
+  .kpi-cell{background:var(--ink-soft); padding:18px 20px;}
+  .kpi-cell .k{font-size:0.78rem; color:var(--text-light-mute); margin-bottom:8px;}
+  .kpi-cell .v{font-family:var(--mono); font-size:1.35rem; color:var(--text-light);}
+
+  .dash-chart-block{margin-bottom:30px;}
+  .dash-chart-block h4{font-size:0.85rem; font-weight:500; color:var(--text-light-mute); margin-bottom:14px;}
+  .legend-row{display:flex; flex-wrap:wrap; gap:14px; margin-top:12px; font-size:0.78rem; color:var(--text-light-mute);}
+  .legend-row span{display:inline-flex; align-items:center; gap:6px;}
+
+  /* ---------- PROCESS ---------- */
+  .process-list{border-top:1px solid var(--line);}
+  .process-item{
+    display:grid; grid-template-columns:70px 1fr 1.4fr; gap:24px;
+    padding:28px 0; border-bottom:1px solid var(--line); align-items:start;
+  }
+  @media(max-width:720px){.process-item{grid-template-columns:50px 1fr; }.process-item p{grid-column:2/3;}}
+  .process-num{font-family:var(--mono); font-size:0.95rem; color:var(--green-deep); padding-top:4px;}
+  .process-item h4{font-family:var(--serif); font-weight:600; font-size:1.15rem;}
+  .process-item p{color:var(--text-mute); font-size:0.94rem;}
+
+  /* ---------- RESULTS ---------- */
+  .results{background:var(--ink); color:var(--text-light);}
+  .results-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+  @media(max-width:900px){.results-grid{grid-template-columns:1fr;}}
+  .results .eyebrow-text{color:var(--text-light-mute); font-size:0.85rem; margin-bottom:16px;}
+  .results h2{color:var(--text-light); font-size:clamp(1.5rem,2.6vw,2.1rem); margin-bottom:20px;}
+  .results p.body{color:var(--text-light-mute); margin-bottom:28px;}
+  blockquote{
+    border-left:2px solid var(--green); padding-left:20px; font-family:var(--serif); font-size:1.05rem;
+    color:var(--text-light); margin-bottom:12px;
+  }
+  cite{display:block; font-style:normal; font-size:0.85rem; color:var(--text-light-mute); font-family:var(--sans);}
+
+  .big-chart-card{background:var(--ink-soft); border:1px solid var(--line-dark); padding:28px;}
+  .before-after{display:flex; justify-content:space-between; margin-bottom:20px;}
+  .ba-block .k{font-size:0.78rem; color:var(--text-light-mute); margin-bottom:6px;}
+  .ba-block .v{font-family:var(--mono); font-size:1.6rem; color:var(--text-light);}
+  .ba-block.after .v{color:var(--green);}
+  .ba-arrow{align-self:center; color:var(--text-light-mute); font-family:var(--mono);}
+
+  /* ---------- TESTIMONIAL / CTA ---------- */
+  .testimonial-strip{
+    padding:70px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  }
+  .testimonial-strip blockquote{
+    max-width:760px; font-size:1.3rem; color:var(--text-dark); border-color:var(--amber);
+  }
+  .testimonial-strip cite{color:var(--text-mute);}
+
+  .final-cta{
+    padding:110px 0; text-align:left;
+  }
+  .final-cta h2{font-size:clamp(1.9rem,4vw,2.8rem); margin-bottom:30px; max-width:16ch;}
+  .final-cta .row{display:flex; gap:20px; flex-wrap:wrap; align-items:center;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink); color:var(--text-light-mute); padding:56px 0 32px; font-size:0.88rem;}
+  .footer-grid{display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:32px; margin-bottom:40px;}
+  @media(max-width:720px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  footer h5{font-family:var(--sans); font-weight:600; color:var(--text-light); font-size:0.85rem; margin-bottom:14px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:9px;}
+  footer a:hover{color:var(--text-light);}
+  .footer-bottom{
+    border-top:1px solid var(--line-dark); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.78rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">AxisGrowth<span>軸成</span></div>
+    <nav class="links">
+      <a href="#services">服務內容</a>
+      <a href="#tools">MarTech 工具</a>
+      <a href="#process">成效方法</a>
+      <a href="#results">案例成果</a>
+      <a href="#contact">關於我們</a>
+    </nav>
+    <a class="btn nav-cta" href="#contact">預約諮詢</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>讓每一次搜尋、每一封信、每一次點擊，都被追蹤、被優化、被看見。</h1>
+      <p class="lede">軸成整合 SEO 搜尋引擎優化、行銷自動化與數據追蹤三大引擎，把分散的行銷預算，變成一條可驗證的成長曲線。</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#contact">預約免費健檢</a>
+        <a class="text-link" href="#results">看成效案例</a>
+      </div>
+      <div class="stat-strip">
+        <div>
+          <span class="stat-num">168%</span>
+          <small>合作滿 12 個月品牌<br>平均自然流量成長</small>
+        </div>
+        <div>
+          <span class="stat-num">300+</span>
+          <small>導入品牌數<br>橫跨 18 個產業別</small>
+        </div>
+        <div>
+          <span class="stat-num">40%</span>
+          <small>自動化流程導入後<br>行銷團隊工時節省</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-top">
+        <div>
+          <span class="label">自然搜尋流量（近 12 個月）</span><br>
+          <span class="val">86,420</span><span class="delta">+168%</span>
+        </div>
+      </div>
+      <svg viewBox="0 0 400 180" width="100%" height="auto">
+        <defs>
+          <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2F8F5B" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#2F8F5B" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g stroke="#2C3A52" stroke-width="1">
+          <line x1="0" y1="20" x2="400" y2="20"/>
+          <line x1="0" y1="70" x2="400" y2="70"/>
+          <line x1="0" y1="120" x2="400" y2="120"/>
+          <line x1="0" y1="170" x2="400" y2="170"/>
+        </g>
+        <path id="chartFill" d="M0,150 L100,130 L200,95 L300,55 L400,15 L400,170 L0,170 Z" fill="url(#fillGrad)"/>
+        <path id="chartPath" d="M0,150 L100,130 L200,95 L300,55 L400,15" fill="none" stroke="#2F8F5B" stroke-width="2.5"/>
+        <circle class="chart-dot" cx="100" cy="130" r="3.5" fill="#EDF0EE"/>
+        <circle class="chart-dot" cx="200" cy="95" r="3.5" fill="#EDF0EE"/>
+        <circle class="chart-dot" cx="300" cy="55" r="3.5" fill="#EDF0EE"/>
+        <circle class="chart-dot" cx="400" cy="15" r="4" fill="#2F8F5B"/>
+      </svg>
+      <div class="chart-caption">
+        <span>1 月</span><span>4 月</span><span>7 月</span><span>10 月</span><span>本月</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>三個引擎，一套成長邏輯</h2>
+      <p>SEO 帶來的是精準流量，自動化決定流量能不能被有效承接，數據追蹤則讓每一分預算的去向都能被說清楚。三者分開做，效果會互相抵銷；一起設計，才會疊加成曲線。</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="panel panel-seo">
+        <span class="panel-kicker">01 / SEO 搜尋引擎優化</span>
+        <h3>把品牌放在使用者搜尋的第一時間</h3>
+        <p>從技術健檢、關鍵字策略到內容架構，找出使用者真正在搜尋、卻還沒被回答的問題，建立能持續帶來自然流量的內容資產。</p>
+        <div class="taglist">
+          <span>技術 SEO 健檢</span><span>關鍵字與搜尋意圖研究</span><span>內容優化與集群規劃</span><span>Core Web Vitals</span><span>結構化資料</span>
+        </div>
+        <div class="seo-bars" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
+      </div>
+
+      <div class="panel panel-auto">
+        <span class="panel-kicker">02 / 行銷自動化 MarTech</span>
+        <h3>讓對的訊息，在對的時間自動發生</h3>
+        <p>依據顧客行為設計觸發流程，從名單進站到成交、回購，每個階段都有系統在背後接手，不必仰賴人工逐一追蹤。</p>
+        <div class="flow-diagram" aria-hidden="true">
+          <div class="flow-node"><span class="flow-dot"></span>訪客進站，留下 Email</div>
+          <div class="flow-line"></div>
+          <div class="flow-node"><span class="flow-dot"></span>依行為評分，分眾標籤</div>
+          <div class="flow-line"></div>
+          <div class="flow-node"><span class="flow-dot"></span>觸發 Email / 簡訊 / LINE</div>
+          <div class="flow-line"></div>
+          <div class="flow-node">同步至業務 CRM 名單</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-analytics">
+      <div>
+        <span class="panel-kicker">03 / 數據追蹤與分析</span>
+        <h3>每一筆成交，都能回溯來自哪一次接觸</h3>
+        <p>建置 GA4 與 GTM 追蹤架構，導入跨管道歸因模型，讓廣告、內容、自動化流程的貢獻，都能拆解成清楚的數字，而不是各自邀功。</p>
+        <div class="taglist">
+          <span>GA4 / GTM 建置</span><span>跨管道歸因模型</span><span>即時儀表板</span><span>A/B 測試框架</span>
+        </div>
+      </div>
+      <div class="mini-dashboard" aria-hidden="true">
+        <div class="row"><span>轉換來源分佈</span><b>本月</b></div>
+        <div class="mini-bars">
+          <div style="height:40%"></div><div style="height:65%"></div><div style="height:30%"></div>
+          <div style="height:85%"></div><div style="height:50%"></div><div style="height:72%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad tools-section" id="tools">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 style="color:var(--text-light);">工具比說明更有說服力</h2>
+      <p style="color:var(--text-light-mute);">以下三個模組是軸成平台實際功能的簡化版本。換上你自己的內容、你想模擬的自動化流程，或篩選看看數據儀表板——結果即時算給你看。</p>
+    </div>
+
+    <div class="tool-tabs" role="tablist" aria-label="MarTech 工具切換">
+      <button class="tool-tab" role="tab" id="tab-seo" aria-selected="true" aria-controls="panel-seo">SEO 內容健檢</button>
+      <button class="tool-tab" role="tab" id="tab-auto" aria-selected="false" aria-controls="panel-auto" tabindex="-1">自動化流程建構器</button>
+      <button class="tool-tab" role="tab" id="tab-dash" aria-selected="false" aria-controls="panel-dash" tabindex="-1">數據追蹤儀表板</button>
+    </div>
+
+    <!-- SEO ANALYZER -->
+    <div class="tool-panel tool-shell" id="panel-seo" role="tabpanel" aria-labelledby="tab-seo">
+      <div class="tool-grid">
+        <div>
+          <div class="field">
+            <label for="seoTitle">網頁標題（Title Tag）</label>
+            <input type="text" id="seoTitle" value="成效型數位行銷顧問｜整合 SEO 與行銷自動化">
+          </div>
+          <div class="field">
+            <label for="seoKeyword">目標關鍵字</label>
+            <input type="text" id="seoKeyword" value="數位行銷顧問">
+          </div>
+          <div class="field">
+            <label for="seoMeta">Meta 描述</label>
+            <textarea id="seoMeta" rows="3">提供成效型數位行銷顧問服務，整合 SEO 搜尋引擎優化、行銷自動化與數據追蹤，協助品牌把行銷預算變成可驗證的成長曲線。</textarea>
+          </div>
+          <div class="field">
+            <label for="seoBody">內文內容（貼上頁面主要文字）</label>
+            <textarea id="seoBody" rows="6">我們是一家專注於成效的數位行銷顧問公司，協助品牌建立可驗證的成長系統。服務涵蓋 SEO 搜尋引擎優化、行銷自動化流程設計與數據追蹤分析，讓每一分行銷預算的去向都清楚可見。透過技術健檢、關鍵字策略與內容優化，我們幫助客戶的網站在搜尋結果中被目標受眾找到，並透過自動化流程把流量轉換為實際商機。</textarea>
+            <span class="hint">中文內容建議 300 字以上，讓密度與涵蓋度計算更準確。</span>
+          </div>
+          <button class="btn" id="seoAnalyzeBtn" type="button" style="background:var(--green-deep); border-color:var(--green-deep);">分析內容</button>
+        </div>
+        <div>
+          <div class="score-head">
+            <span style="font-size:0.85rem; color:var(--text-light-mute);">SEO 健檢分數</span>
+            <span class="score-num" id="seoScoreNum">--</span>
+          </div>
+          <div class="score-bar-track"><div class="score-bar-fill" id="seoScoreBar" style="width:0%; background:var(--amber);"></div></div>
+          <ul class="checklist" id="seoChecklist">
+            <li><span class="check-dot" style="background:var(--line-dark);"></span>按「分析內容」查看結果</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUTOMATION BUILDER -->
+    <div class="tool-panel tool-shell" id="panel-auto" role="tabpanel" aria-labelledby="tab-auto" hidden>
+      <div class="tool-grid">
+        <div>
+          <div class="field">
+            <label for="autoTrigger">觸發條件（Trigger）</label>
+            <select id="autoTrigger">
+              <option value="form">訪客填寫表單</option>
+              <option value="cart">購物車未結帳</option>
+              <option value="birthday">會員生日</option>
+              <option value="catalog">下載型錄 / 白皮書</option>
+            </select>
+          </div>
+
+          <label style="display:block; font-size:0.82rem; color:var(--text-light-mute); margin-bottom:6px;">流程步驟</label>
+          <div class="step-list" id="stepList"></div>
+
+          <div class="add-step-row">
+            <select id="autoActionSelect">
+              <option value="email">發送 Email</option>
+              <option value="sms">發送簡訊</option>
+              <option value="line">發送 LINE 訊息</option>
+              <option value="tag">加上標籤並通知業務</option>
+              <option value="wait1">等待 1 天</option>
+              <option value="wait3">等待 3 天</option>
+            </select>
+            <button class="btn ghost" id="addStepBtn" type="button" style="border-color:var(--line-dark); color:var(--text-light);">加入步驟</button>
+          </div>
+          <span class="hint">最多可加入 6 個步驟，點步驟右側的 × 可移除。</span>
+        </div>
+        <div>
+          <span style="font-size:0.85rem; color:var(--text-light-mute); display:block; margin-bottom:16px;">成效預估（未接後端時採本地模擬估算，僅供參考）</span>
+          <p class="tool-status" id="funnelStatus" hidden></p>
+          <div id="funnelResult"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALYTICS DASHBOARD -->
+    <div class="tool-panel tool-shell" id="panel-dash" role="tabpanel" aria-labelledby="tab-dash" hidden>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:8px;">
+        <div class="seg-control" id="rangeControl">
+          <button data-range="7">近 7 天</button>
+          <button data-range="30" aria-pressed="true">近 30 天</button>
+          <button data-range="90">近 90 天</button>
+        </div>
+      </div>
+      <div class="channel-filters" id="channelFilters"></div>
+
+      <p class="tool-status" id="dashStatus" hidden></p>
+      <div class="kpi-grid" id="kpiGrid"></div>
+
+      <div class="dash-chart-block">
+        <h4>流量走勢（所選管道加總）</h4>
+        <svg id="trendSvg" viewBox="0 0 640 180" width="100%" height="auto"></svg>
+      </div>
+
+      <div class="dash-chart-block">
+        <h4>各管道工作階段占比</h4>
+        <svg id="barSvg" viewBox="0 0 640 140" width="100%" height="auto"></svg>
+        <div class="legend-row" id="barLegend"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="process" style="background:var(--paper-dim);">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>從診斷到迭代，五個階段</h2>
+      <p>成效不是一次性專案，而是持續運轉的系統。以下是我們與每個品牌合作的實際節奏。</p>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">01</div>
+        <h4>現況診斷</h4>
+        <p>網站技術健檢、既有數據盤點、競品與產業關鍵字分析，找出成長瓶頸實際卡在哪一段。</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">02</div>
+        <h4>策略規劃</h4>
+        <p>設定北極星指標，反推需要的追蹤架構與內容 / 自動化策略，避免資源投在不影響指標的地方。</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">03</div>
+        <h4>系統建置</h4>
+        <p>同步進行 SEO 內容優化、自動化流程搭建與追蹤碼埋設，確保上線當天就能開始收數據。</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">04</div>
+        <h4>上線監測</h4>
+        <p>即時儀表板與異常告警機制，流量或轉換出現異常波動時，第一時間掌握而非月底才發現。</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">05</div>
+        <h4>迭代優化</h4>
+        <p>每月成效檢視會議，透過 A/B 測試持續驗證假設，把有效的做法規模化、無效的及早喊停。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad results" id="results">
+  <div class="wrap">
+    <div class="results-grid">
+      <div>
+        <div class="eyebrow-text">案例成果 · B2B 雲端服務品牌</div>
+        <h2>三個月轉換率翻倍，行銷團隊不再手動核對名單</h2>
+        <p class="body">此品牌原先 SEO 內容與 CRM 系統各自為政，行銷團隊每週花超過十小時手動整理名單、對接業務。導入軸成的整合架構後，內容策略對齊了實際搜尋需求，名單評分與分眾流程全面自動化。</p>
+        <blockquote>
+          過去我們很難說清楚一筆成交到底是哪個管道帶來的，現在每個數字後面都有邏輯可以追溯，預算調整也更有信心。
+          <cite>— 行銷長，B2B 雲端服務品牌</cite>
+        </blockquote>
+      </div>
+      <div class="big-chart-card">
+        <div class="before-after">
+          <div class="ba-block">
+            <div class="k">合作前・月轉換率</div>
+            <div class="v">1.8%</div>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="ba-block after">
+            <div class="k">合作 3 個月後</div>
+            <div class="v">3.9%</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 360 100" width="100%" height="auto">
+          <polyline points="0,80 60,74 120,68 180,50 240,38 300,22 360,10" fill="none" stroke="#2F8F5B" stroke-width="2.5"/>
+          <polyline points="0,80 60,74 120,68 180,50 240,38 300,22 360,10" fill="none" stroke="#2F8F5B" stroke-width="0" />
+        </svg>
+        <div class="chart-caption"><span>第 1 週</span><span>第 6 週</span><span>第 12 週</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-strip">
+  <div class="wrap">
+    <blockquote>
+      軸成不是幫我們「投廣告」，而是把整個行銷系統重新接線。現在新產品上市，兩週內就能看到完整的成效歸因。
+      <cite>— 電商營運總監，居家生活品牌</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="final-cta" id="contact">
+  <div class="wrap">
+    <h2>成長不該是猜測。</h2>
+    <div class="row">
+      <a class="btn" href="mailto:hello@axisgrowth.tw">預約免費健檢</a>
+      <a class="btn ghost" href="#services">重新看服務內容</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:var(--text-light); margin-bottom:14px;">AxisGrowth<span>軸成</span></div>
+        <p style="max-width:34ch; color:var(--text-light-mute); font-size:0.88rem;">成效型數位行銷與 MarTech 應用顧問，整合 SEO、行銷自動化與數據追蹤，讓成長變得可驗證。</p>
+      </div>
+      <div>
+        <h5>服務</h5>
+        <ul>
+          <li><a href="#services">SEO 搜尋引擎優化</a></li>
+          <li><a href="#services">行銷自動化</a></li>
+          <li><a href="#services">數據追蹤分析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>公司</h5>
+        <ul>
+          <li><a href="#process">成效方法</a></li>
+          <li><a href="#results">案例成果</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>聯絡方式</h5>
+        <ul>
+          <li><a href="mailto:hello@axisgrowth.tw">hello@axisgrowth.tw</a></li>
+          <li><a href="tel:+886223456789">02-2345-6789</a></li>
+          <li>台北市信義區</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AxisGrowth 軸成顧問有限公司</span>
+      <span>網站內容為示意設計，數據為情境示範用途</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ================= API CONFIG =================
+     Fill in baseUrl + apiKey and set demoMode to false to switch the
+     automation-funnel estimate and the tracking dashboard from local
+     simulated data to your real backend (see API spec document).
+     Left as demoMode:true, everything below keeps working exactly as
+     it does now, computed entirely in the browser. */
+  var API_CONFIG = {
+    baseUrl: 'https://deploy-from-github-repo-production-4e81.up.railway.app',
+    apiKey: '',        // 貼上你在 Railway Variables 設定的 PUBLIC_API_KEY
+    demoMode: false
+  };
+
+  function useRealApi(){
+    return !API_CONFIG.demoMode && !!API_CONFIG.baseUrl;
+  }
+
+  function apiFetch(path, opts){
+    opts = opts || {};
+    var headers = Object.assign({'Content-Type':'application/json'}, opts.headers || {});
+    if(API_CONFIG.apiKey){ headers['Authorization'] = 'Bearer ' + API_CONFIG.apiKey; }
+    return fetch(API_CONFIG.baseUrl + path, Object.assign({}, opts, {headers: headers}))
+      .then(function(res){
+        if(!res.ok){
+          return res.text().catch(function(){ return ''; }).then(function(text){
+            throw new Error('API ' + res.status + '：' + (text || res.statusText));
+          });
+        }
+        return res.json();
+      });
+  }
+
+  /* ================= TAB SWITCHING ================= */
+  var tabs = document.querySelectorAll('.tool-tab');
+  var panels = { 'tab-seo':'panel-seo', 'tab-auto':'panel-auto', 'tab-dash':'panel-dash' };
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){
+        t.setAttribute('aria-selected','false');
+        t.tabIndex = -1;
+        document.getElementById(panels[t.id]).hidden = true;
+      });
+      tab.setAttribute('aria-selected','true');
+      tab.tabIndex = 0;
+      document.getElementById(panels[tab.id]).hidden = false;
+      if(tab.id === 'tab-dash') renderDashboard();
+    });
+  });
+
+  /* ================= TOOL 1: SEO ANALYZER ================= */
+  function countOccurrences(haystack, needle){
+    if(!needle) return 0;
+    var count = 0, pos = 0;
+    while((pos = haystack.indexOf(needle, pos)) !== -1){ count++; pos += needle.length; }
+    return count;
+  }
+
+  function scoreLabel(score){
+    if(score >= 80) return {text:'良好', color:'var(--green)'};
+    if(score >= 50) return {text:'普通', color:'var(--amber)'};
+    return {text:'待改善', color:'var(--alert)'};
+  }
+
+  function analyzeSEO(){
+    var title = document.getElementById('seoTitle').value.trim();
+    var keyword = document.getElementById('seoKeyword').value.trim();
+    var meta = document.getElementById('seoMeta').value.trim();
+    var body = document.getElementById('seoBody').value.trim();
+
+    var score = 0;
+    var checks = [];
+
+    // Title length
+    var tLen = title.length;
+    if(tLen === 0){
+      checks.push({status:'fail', text:'<strong>網頁標題</strong>尚未填寫'});
+    } else if(tLen >= 15 && tLen <= 35){
+      score += 20;
+      checks.push({status:'pass', text:'<strong>標題長度</strong> ' + tLen + ' 字，落在建議的 15–35 字範圍'});
+    } else {
+      score += 8;
+      checks.push({status:'warn', text:'<strong>標題長度</strong> ' + tLen + ' 字，建議調整到 15–35 字之間'});
+    }
+
+    // Title keyword
+    if(keyword && title.indexOf(keyword) !== -1){
+      score += 15;
+      checks.push({status:'pass', text:'標題<strong>包含目標關鍵字</strong>「' + keyword + '」'});
+    } else {
+      checks.push({status:'warn', text:'標題<strong>未包含</strong>目標關鍵字，建議自然地加入'});
+    }
+
+    // Meta length
+    var mLen = meta.length;
+    if(mLen === 0){
+      checks.push({status:'fail', text:'<strong>Meta 描述</strong>尚未填寫'});
+    } else if(mLen >= 50 && mLen <= 120){
+      score += 20;
+      checks.push({status:'pass', text:'<strong>Meta 描述長度</strong> ' + mLen + ' 字，落在建議的 50–120 字範圍'});
+    } else {
+      score += 8;
+      checks.push({status:'warn', text:'<strong>Meta 描述長度</strong> ' + mLen + ' 字，建議調整到 50–120 字之間'});
+    }
+
+    // Meta keyword
+    if(keyword && meta.indexOf(keyword) !== -1){
+      score += 15;
+      checks.push({status:'pass', text:'Meta 描述<strong>包含目標關鍵字</strong>'});
+    } else {
+      checks.push({status:'warn', text:'Meta 描述<strong>未包含</strong>目標關鍵字'});
+    }
+
+    // Keyword density in body
+    var bodyLen = body.length;
+    if(keyword && bodyLen > 0){
+      var occ = countOccurrences(body, keyword);
+      var density = (occ * keyword.length / bodyLen) * 100;
+      if(density >= 0.5 && density <= 3){
+        score += 15;
+        checks.push({status:'pass', text:'<strong>關鍵字密度</strong>約 ' + density.toFixed(1) + '%，出現 ' + occ + ' 次，落在建議範圍'});
+      } else if(density === 0){
+        checks.push({status:'warn', text:'內文<strong>未出現</strong>目標關鍵字'});
+      } else {
+        score += 6;
+        checks.push({status:'warn', text:'<strong>關鍵字密度</strong>約 ' + density.toFixed(1) + '%，建議調整到 0.5%–3% 之間'});
+      }
+    } else {
+      checks.push({status:'warn', text:'請填寫關鍵字與內文，才能計算密度'});
+    }
+
+    // Content length
+    if(bodyLen >= 300){
+      score += 15;
+      checks.push({status:'pass', text:'<strong>內文字數</strong> ' + bodyLen + ' 字，長度足夠讓搜尋引擎理解主題'});
+    } else if(bodyLen > 0){
+      score += 6;
+      checks.push({status:'warn', text:'<strong>內文字數</strong>僅 ' + bodyLen + ' 字，建議擴充到 300 字以上'});
+    } else {
+      checks.push({status:'fail', text:'尚未填寫內文內容'});
+    }
+
+    score = Math.min(100, Math.round(score));
+    var label = scoreLabel(score);
+
+    document.getElementById('seoScoreNum').textContent = score;
+    document.getElementById('seoScoreNum').style.color = label.color;
+    var bar = document.getElementById('seoScoreBar');
+    bar.style.width = score + '%';
+    bar.style.background = label.color;
+
+    var list = document.getElementById('seoChecklist');
+    list.innerHTML = '';
+    checks.forEach(function(c){
+      var li = document.createElement('li');
+      li.innerHTML = '<span class="check-dot ' + c.status + '"></span><span>' + c.text + '</span>';
+      list.appendChild(li);
+    });
+  }
+
+  document.getElementById('seoAnalyzeBtn').addEventListener('click', analyzeSEO);
+  analyzeSEO();
+
+  /* ================= TOOL 2: AUTOMATION BUILDER ================= */
+  var triggerMeta = {
+    form:      {label:'訪客填寫表單',        audience:1200},
+    cart:      {label:'購物車未結帳',        audience:480},
+    birthday:  {label:'會員生日',            audience:260},
+    catalog:   {label:'下載型錄 / 白皮書',   audience:640}
+  };
+  var actionMeta = {
+    email:  {label:'發送 Email',            rate:0.42, isDelay:false},
+    sms:    {label:'發送簡訊',              rate:0.55, isDelay:false},
+    line:   {label:'發送 LINE 訊息',        rate:0.60, isDelay:false},
+    tag:    {label:'加上標籤並通知業務',    rate:0.90, isDelay:false},
+    wait1:  {label:'等待 1 天',             rate:1.00, isDelay:true},
+    wait3:  {label:'等待 3 天',             rate:1.00, isDelay:true}
+  };
+
+  var steps = ['email','wait1','sms'];
+
+  function renderSteps(){
+    var triggerKey = document.getElementById('autoTrigger').value;
+    var list = document.getElementById('stepList');
+    list.innerHTML = '';
+
+    var startNode = document.createElement('div');
+    startNode.className = 'step-node';
+    startNode.style.borderLeft = '3px solid var(--green)';
+    startNode.innerHTML = '<span>觸發：' + triggerMeta[triggerKey].label + '</span><span></span>';
+    list.appendChild(startNode);
+
+    steps.forEach(function(key, i){
+      var connector = document.createElement('div');
+      connector.className = 'step-connector';
+      list.appendChild(connector);
+
+      var node = document.createElement('div');
+      node.className = 'step-node';
+      if(actionMeta[key].isDelay){ node.style.borderLeft = '3px solid var(--blue-slate)'; }
+      else { node.style.borderLeft = '3px solid var(--amber)'; }
+      var removeBtn = document.createElement('button');
+      removeBtn.className = 'step-remove';
+      removeBtn.type = 'button';
+      removeBtn.textContent = '×';
+      removeBtn.setAttribute('aria-label', '移除步驟：' + actionMeta[key].label);
+      removeBtn.addEventListener('click', function(){
+        steps.splice(i,1);
+        renderSteps();
+      });
+      var textSpan = document.createElement('span');
+      textSpan.textContent = (i+1) + '. ' + actionMeta[key].label;
+      node.appendChild(textSpan);
+      node.appendChild(removeBtn);
+      list.appendChild(node);
+    });
+
+    updateFunnel(triggerKey);
+  }
+
+  // Local demo estimate — used when API_CONFIG.demoMode is true or the
+  // real call fails. Mirrors the shape returned by POST /api/automation/estimate.
+  function getDemoFunnel(triggerKey, stepKeys){
+    var audience = triggerMeta[triggerKey].audience;
+    var rows = [{label:'觸發對象', value: audience}];
+    stepKeys.forEach(function(key){
+      if(!actionMeta[key].isDelay){
+        audience = Math.round(audience * actionMeta[key].rate);
+        rows.push({label: actionMeta[key].label, value: audience});
+      }
+    });
+    var completionRate = rows.length > 1 ? (rows[rows.length-1].value / rows[0].value) * 100 : 100;
+    return Promise.resolve({steps: rows, completion_rate: completionRate, source: 'demo'});
+  }
+
+  function fetchFunnel(triggerKey, stepKeys){
+    if(useRealApi()){
+      return apiFetch('/api/automation/estimate', {
+        method: 'POST',
+        body: JSON.stringify({trigger: triggerKey, steps: stepKeys})
+      }).catch(function(err){
+        console.warn('自動化估算 API 呼叫失敗，改用本地示範資料：', err.message);
+        return getDemoFunnel(triggerKey, stepKeys);
+      });
+    }
+    return getDemoFunnel(triggerKey, stepKeys);
+  }
+
+  function setFunnelStatus(msg, isError){
+    var el = document.getElementById('funnelStatus');
+    if(!msg){ el.hidden = true; return; }
+    el.hidden = false;
+    el.textContent = msg;
+    el.style.color = isError ? 'var(--alert)' : 'var(--text-light-mute)';
+  }
+
+  function updateFunnel(triggerKey){
+    setFunnelStatus(useRealApi() ? '正在向後端估算成效…' : null, false);
+    fetchFunnel(triggerKey, steps.slice()).then(function(data){
+      setFunnelStatus(null);
+      renderFunnel(data);
+    }).catch(function(err){
+      setFunnelStatus('無法取得成效預估：' + err.message, true);
+    });
+  }
+
+  function renderFunnel(data){
+    var rows = data.steps;
+    var container = document.getElementById('funnelResult');
+    container.innerHTML = '';
+    var maxVal = (rows[0] && rows[0].value) || 1;
+    rows.forEach(function(r){
+      var row = document.createElement('div');
+      row.className = 'funnel-row';
+      var pct = Math.max(4, Math.round((r.value / maxVal) * 100));
+      row.innerHTML =
+        '<span style="color:var(--text-light-mute);">' + r.label + '</span>' +
+        '<span class="funnel-track"><span class="funnel-fill" style="width:' + pct + '%;"></span></span>' +
+        '<span class="funnel-num">' + r.value.toLocaleString('zh-Hant-TW') + '</span>';
+      container.appendChild(row);
+    });
+
+    var summary = document.createElement('p');
+    summary.style.cssText = 'margin-top:16px; font-size:0.85rem; color:var(--text-light-mute);';
+    var sourceNote = data.source === 'demo'
+      ? '（模擬估算，實際依名單品質與內容而異）'
+      : '（依歷史成效數據估算）';
+    summary.innerHTML = '整體流程完成率約 <strong style="color:var(--text-light);">' + data.completion_rate.toFixed(1) + '%</strong>' + sourceNote;
+    container.appendChild(summary);
+  }
+
+  document.getElementById('autoTrigger').addEventListener('change', renderSteps);
+  document.getElementById('addStepBtn').addEventListener('click', function(){
+    if(steps.length >= 6) return;
+    var val = document.getElementById('autoActionSelect').value;
+    steps.push(val);
+    renderSteps();
+  });
+  renderSteps();
+
+  /* ================= TOOL 3: TRACKING DASHBOARD ================= */
+  function mulberry32(seed){
+    return function(){
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  var channelMeta = {
+    seo:        {label:'自然搜尋 SEO',   color:'var(--green)',      base:180, trend:2.6, convRate:0.045, aov:1450},
+    paid:       {label:'付費廣告',       color:'var(--amber)',      base:140, trend:0.4, convRate:0.028, aov:1200},
+    automation: {label:'行銷自動化',     color:'var(--blue-slate)', base:90,  trend:1.1, convRate:0.061, aov:1600},
+    social:     {label:'社群媒體',       color:'var(--plum)',       base:70,  trend:0.6, convRate:0.021, aov:980},
+    direct:     {label:'直接流量',       color:'var(--grey-mid)',   base:60,  trend:0.2, convRate:0.033, aov:1100}
+  };
+  var DAYS = 90;
+  var dataset = {};
+  Object.keys(channelMeta).forEach(function(ch, idx){
+    var rnd = mulberry32(1000 + idx * 77);
+    var meta = channelMeta[ch];
+    var sessions = [], conversions = [];
+    for(var d = 0; d < DAYS; d++){
+      var noise = (rnd() - 0.5) * meta.base * 0.5;
+      var s = Math.max(5, Math.round(meta.base + meta.trend * d + noise));
+      var c = Math.max(0, Math.round(s * meta.convRate * (0.7 + rnd() * 0.6)));
+      sessions.push(s);
+      conversions.push(c);
+    }
+    dataset[ch] = {sessions:sessions, conversions:conversions};
+  });
+
+  // Local demo aggregate — used when API_CONFIG.demoMode is true or the
+  // real call fails. Mirrors the shape returned by GET /api/analytics.
+  function getDemoAnalytics(range, channels){
+    function sliceRange(arr){ return arr.slice(DAYS - range); }
+
+    var totalSessions = 0, totalConversions = 0, totalRevenue = 0;
+    var byChannel = channels.map(function(ch){
+      var s = sliceRange(dataset[ch].sessions).reduce(function(a,b){return a+b;}, 0);
+      var c = sliceRange(dataset[ch].conversions).reduce(function(a,b){return a+b;}, 0);
+      var r = c * channelMeta[ch].aov;
+      totalSessions += s;
+      totalConversions += c;
+      totalRevenue += r;
+      return {channel:ch, label:channelMeta[ch].label, sessions:s, conversions:c, revenue:r};
+    });
+
+    var trendTotals = new Array(range).fill(0);
+    channels.forEach(function(ch){
+      sliceRange(dataset[ch].sessions).forEach(function(v, i){ trendTotals[i] += v; });
+    });
+    var trend = trendTotals.map(function(v, i){ return {index:i, sessions:v}; });
+
+    return Promise.resolve({
+      range: range,
+      totals: {
+        sessions: totalSessions,
+        conversions: totalConversions,
+        conversion_rate: totalSessions > 0 ? (totalConversions / totalSessions * 100) : 0,
+        revenue: totalRevenue
+      },
+      trend: trend,
+      by_channel: byChannel,
+      source: 'demo'
+    });
+  }
+
+  function fetchAnalytics(range, channels){
+    if(useRealApi()){
+      var qs = '?range=' + range + '&channels=' + channels.join(',');
+      return apiFetch('/api/analytics' + qs).catch(function(err){
+        console.warn('數據追蹤 API 呼叫失敗，改用本地示範資料：', err.message);
+        return getDemoAnalytics(range, channels);
+      });
+    }
+    return getDemoAnalytics(range, channels);
+  }
+
+  var currentRange = 30;
+  var activeChannels = Object.keys(channelMeta).slice();
+
+  // build channel filter checkboxes
+  var chanContainer = document.getElementById('channelFilters');
+  Object.keys(channelMeta).forEach(function(ch){
+    var meta = channelMeta[ch];
+    var label = document.createElement('label');
+    label.className = 'chan-check';
+    label.innerHTML =
+      '<input type="checkbox" checked data-channel="' + ch + '">' +
+      '<span class="chan-swatch" style="background:' + meta.color + ';"></span>' +
+      '<span>' + meta.label + '</span>';
+    chanContainer.appendChild(label);
+  });
+  chanContainer.addEventListener('change', function(e){
+    if(e.target.matches('input[type=checkbox]')){
+      var checked = chanContainer.querySelectorAll('input[type=checkbox]:checked');
+      activeChannels = Array.prototype.map.call(checked, function(cb){ return cb.getAttribute('data-channel'); });
+      renderDashboard();
+    }
+  });
+
+  document.getElementById('rangeControl').addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-range]');
+    if(!btn) return;
+    currentRange = parseInt(btn.getAttribute('data-range'), 10);
+    this.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
+    btn.setAttribute('aria-pressed', 'true');
+    renderDashboard();
+  });
+
+  function renderKPIs(totals){
+    var cells = [
+      {k:'工作階段', v: totals.sessions.toLocaleString('zh-Hant-TW')},
+      {k:'轉換數',   v: totals.conversions.toLocaleString('zh-Hant-TW')},
+      {k:'轉換率',   v: totals.conversion_rate.toFixed(2) + '%'},
+      {k:'預估貢獻營收', v: 'NT$ ' + Math.round(totals.revenue).toLocaleString('zh-Hant-TW')}
+    ];
+    var grid = document.getElementById('kpiGrid');
+    grid.innerHTML = '';
+    cells.forEach(function(c){
+      var cell = document.createElement('div');
+      cell.className = 'kpi-cell';
+      cell.innerHTML = '<div class="k">' + c.k + '</div><div class="v">' + c.v + '</div>';
+      grid.appendChild(cell);
+    });
+  }
+
+  function renderTrend(trend){
+    var svg = document.getElementById('trendSvg');
+    var w = 640, h = 180, pad = 8;
+    var values = trend.map(function(t){ return t.sessions; });
+    var maxV = Math.max.apply(null, values) || 1;
+    var stepX = w / (values.length - 1 || 1);
+    var points = values.map(function(v, i){
+      var x = i * stepX;
+      var y = h - pad - (v / maxV) * (h - pad * 2);
+      return x.toFixed(1) + ',' + y.toFixed(1);
+    }).join(' ');
+    var fillPoints = points + ' ' + w + ',' + h + ' 0,' + h;
+
+    svg.innerHTML =
+      '<defs><linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="#2F8F5B" stop-opacity="0.3"/>' +
+      '<stop offset="100%" stop-color="#2F8F5B" stop-opacity="0"/></linearGradient></defs>' +
+      '<polyline points="' + fillPoints + '" fill="url(#trendGrad)" stroke="none"/>' +
+      '<polyline points="' + points + '" fill="none" stroke="#2F8F5B" stroke-width="2.5"/>';
+  }
+
+  function renderBars(byChannel){
+    var svg = document.getElementById('barSvg');
+    var w = 640, h = 140, gap = 24;
+    var maxV = Math.max.apply(null, byChannel.map(function(t){return t.sessions;})) || 1;
+    var barW = (w - gap * (byChannel.length - 1)) / (byChannel.length || 1);
+    var bars = '';
+    byChannel.forEach(function(t, i){
+      var barH = (t.sessions / maxV) * (h - 20);
+      var x = i * (barW + gap);
+      var y = h - barH;
+      var color = getComputedColor(channelMeta[t.channel] ? channelMeta[t.channel].color : 'var(--grey-mid)');
+      bars += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + barW.toFixed(1) + '" height="' + barH.toFixed(1) + '" fill="' + color + '"/>';
+    });
+    svg.innerHTML = bars;
+
+    var legend = document.getElementById('barLegend');
+    legend.innerHTML = '';
+    byChannel.forEach(function(t){
+      var meta = channelMeta[t.channel] || {color:'var(--grey-mid)', label:t.label};
+      var span = document.createElement('span');
+      span.innerHTML = '<span class="chan-swatch" style="background:' + meta.color + ';"></span>' + t.label + '（' + t.sessions.toLocaleString('zh-Hant-TW') + '）';
+      legend.appendChild(span);
+    });
+  }
+
+  function getComputedColor(cssVarExpr){
+    var m = cssVarExpr.match(/--[\w-]+/);
+    if(!m) return cssVarExpr;
+    return getComputedStyle(document.documentElement).getPropertyValue(m[0]).trim() || '#888';
+  }
+
+  function setDashboardStatus(msg, isError){
+    var el = document.getElementById('dashStatus');
+    if(!msg){ el.hidden = true; return; }
+    el.hidden = false;
+    el.textContent = msg;
+    el.style.color = isError ? 'var(--alert)' : 'var(--text-light-mute)';
+  }
+
+  function renderDashboard(){
+    if(activeChannels.length === 0){ activeChannels = Object.keys(channelMeta); }
+    setDashboardStatus(useRealApi() ? '正在載入數據…' : null, false);
+    fetchAnalytics(currentRange, activeChannels).then(function(data){
+      setDashboardStatus(null);
+      renderKPIs(data.totals);
+      renderTrend(data.trend);
+      renderBars(data.by_channel);
+    }).catch(function(err){
+      setDashboardStatus('無法載入數據：' + err.message, true);
+    });
+  }
+  renderDashboard();
+
+})();
+</script>
+</body>
+</html>
