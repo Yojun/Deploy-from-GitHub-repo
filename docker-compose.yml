@@ -1,0 +1,29 @@
+# 只提供 Postgres + Redis，backend 本身建議用 `npm start` 在本機跑，
+# 方便看 log、改程式碼不用重建 image。
+#
+# 用法：
+#   docker compose up -d
+#   然後 .env 設定：
+#     DATABASE_URL=postgres://martech:martech@localhost:5432/martech
+#     REDIS_URL=redis://localhost:6379
+#   npm run migrate && npm start
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: martech
+      POSTGRES_PASSWORD: martech
+      POSTGRES_DB: martech
+    ports:
+      - "5432:5432"
+    volumes:
+      - martech_pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+volumes:
+  martech_pg_data:

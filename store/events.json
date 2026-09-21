@@ -1,0 +1,3030 @@
+[
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-18T21:54:16.903Z",
+    "contact": {
+      "id": "c_seed_127",
+      "email": "seed127@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 797,
+      "deal_id": "d_seed_127"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-19T07:01:41.783Z",
+    "contact": {
+      "id": "c_seed_131",
+      "email": "seed131@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-19T10:20:02.345Z",
+    "contact": {
+      "id": "c_seed_185",
+      "email": "seed185@example.com"
+    },
+    "properties": {
+      "channel": "direct",
+      "amount": 1705,
+      "deal_id": "d_seed_185"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-19T17:05:21.357Z",
+    "contact": {
+      "id": "c_seed_251",
+      "email": "seed251@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-20T09:38:11.524Z",
+    "contact": {
+      "id": "c_seed_190",
+      "email": "seed190@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-20T10:32:54.186Z",
+    "contact": {
+      "id": "c_seed_198",
+      "email": "seed198@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 3174,
+      "deal_id": "d_seed_198"
+    }
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-20T11:15:25.965Z",
+    "contact": {
+      "id": "c_seed_199",
+      "email": "seed199@example.com"
+    },
+    "properties": {
+      "channel": "direct",
+      "amount": 2450,
+      "deal_id": "d_seed_199"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-20T13:42:47.287Z",
+    "contact": {
+      "id": "c_seed_67",
+      "email": "seed67@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-20T15:34:13.353Z",
+    "contact": {
+      "id": "c_seed_14",
+      "email": "seed14@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-20T20:43:03.658Z",
+    "contact": {
+      "id": "c_seed_109",
+      "email": "seed109@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-20T20:44:26.596Z",
+    "contact": {
+      "id": "c_seed_224",
+      "email": "seed224@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 1864,
+      "deal_id": "d_seed_224"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-21T01:54:10.953Z",
+    "contact": {
+      "id": "c_seed_13",
+      "email": "seed13@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-21T04:20:45.635Z",
+    "contact": {
+      "id": "c_seed_34",
+      "email": "seed34@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-21T07:33:31.404Z",
+    "contact": {
+      "id": "c_seed_305",
+      "email": "seed305@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-22T00:04:18.238Z",
+    "contact": {
+      "id": "c_seed_259",
+      "email": "seed259@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-22T02:12:20.479Z",
+    "contact": {
+      "id": "c_seed_20",
+      "email": "seed20@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-22T14:42:44.662Z",
+    "contact": {
+      "id": "c_seed_243",
+      "email": "seed243@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-22T22:18:59.355Z",
+    "contact": {
+      "id": "c_seed_247",
+      "email": "seed247@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-23T03:17:52.509Z",
+    "contact": {
+      "id": "c_seed_283",
+      "email": "seed283@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-06-23T03:54:55.142Z",
+    "contact": {
+      "id": "c_seed_234",
+      "email": "seed234@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 692,
+      "deal_id": "d_seed_234"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-23T12:04:07.601Z",
+    "contact": {
+      "id": "c_seed_218",
+      "email": "seed218@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-23T13:05:20.712Z",
+    "contact": {
+      "id": "c_seed_179",
+      "email": "seed179@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-23T13:48:39.997Z",
+    "contact": {
+      "id": "c_seed_143",
+      "email": "seed143@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-23T16:00:10.287Z",
+    "contact": {
+      "id": "c_seed_315",
+      "email": "seed315@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-23T17:37:01.600Z",
+    "contact": {
+      "id": "c_seed_3",
+      "email": "seed3@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-06-23T19:02:55.303Z",
+    "contact": {
+      "id": "c_seed_219",
+      "email": "seed219@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-23T23:28:01.573Z",
+    "contact": {
+      "id": "c_seed_134",
+      "email": "seed134@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-24T03:29:35.950Z",
+    "contact": {
+      "id": "c_seed_115",
+      "email": "seed115@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-24T03:56:27.322Z",
+    "contact": {
+      "id": "c_seed_60",
+      "email": "seed60@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-06-24T17:19:24.701Z",
+    "contact": {
+      "id": "c_seed_66",
+      "email": "seed66@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-24T18:58:17.756Z",
+    "contact": {
+      "id": "c_seed_181",
+      "email": "seed181@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-24T23:44:52.293Z",
+    "contact": {
+      "id": "c_seed_269",
+      "email": "seed269@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-25T03:14:41.053Z",
+    "contact": {
+      "id": "c_seed_79",
+      "email": "seed79@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-25T13:45:44.686Z",
+    "contact": {
+      "id": "c_seed_287",
+      "email": "seed287@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-06-26T05:21:37.218Z",
+    "contact": {
+      "id": "c_seed_111",
+      "email": "seed111@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-26T06:09:16.616Z",
+    "contact": {
+      "id": "c_seed_165",
+      "email": "seed165@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-26T08:19:01.931Z",
+    "contact": {
+      "id": "c_seed_191",
+      "email": "seed191@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-27T16:01:12.545Z",
+    "contact": {
+      "id": "c_seed_311",
+      "email": "seed311@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-28T04:15:45.563Z",
+    "contact": {
+      "id": "c_seed_233",
+      "email": "seed233@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-28T06:42:54.694Z",
+    "contact": {
+      "id": "c_seed_312",
+      "email": "seed312@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-28T10:29:57.053Z",
+    "contact": {
+      "id": "c_seed_246",
+      "email": "seed246@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-06-28T13:21:37.663Z",
+    "contact": {
+      "id": "c_seed_271",
+      "email": "seed271@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-30T04:13:44.331Z",
+    "contact": {
+      "id": "c_seed_295",
+      "email": "seed295@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-06-30T15:50:38.218Z",
+    "contact": {
+      "id": "c_seed_197",
+      "email": "seed197@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-06-30T22:10:49.882Z",
+    "contact": {
+      "id": "c_seed_273",
+      "email": "seed273@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-01T01:50:45.375Z",
+    "contact": {
+      "id": "c_seed_270",
+      "email": "seed270@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-01T06:17:50.795Z",
+    "contact": {
+      "id": "c_seed_140",
+      "email": "seed140@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-01T10:33:49.256Z",
+    "contact": {
+      "id": "c_seed_297",
+      "email": "seed297@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-02T21:21:21.016Z",
+    "contact": {
+      "id": "c_seed_314",
+      "email": "seed314@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-03T00:07:09.852Z",
+    "contact": {
+      "id": "c_seed_294",
+      "email": "seed294@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-03T14:11:08.545Z",
+    "contact": {
+      "id": "c_seed_238",
+      "email": "seed238@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 1113,
+      "deal_id": "d_seed_238"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-03T14:28:16.370Z",
+    "contact": {
+      "id": "c_seed_277",
+      "email": "seed277@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-03T19:14:08.828Z",
+    "contact": {
+      "id": "c_seed_264",
+      "email": "seed264@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 960,
+      "deal_id": "d_seed_264"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-03T22:00:40.973Z",
+    "contact": {
+      "id": "c_seed_51",
+      "email": "seed51@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-04T07:48:54.129Z",
+    "contact": {
+      "id": "c_seed_82",
+      "email": "seed82@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-04T13:14:17.261Z",
+    "contact": {
+      "id": "c_seed_92",
+      "email": "seed92@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-04T19:29:36.274Z",
+    "contact": {
+      "id": "c_seed_103",
+      "email": "seed103@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-05T02:34:19.957Z",
+    "contact": {
+      "id": "c_seed_158",
+      "email": "seed158@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-05T10:26:41.710Z",
+    "contact": {
+      "id": "c_seed_89",
+      "email": "seed89@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-05T21:21:39.670Z",
+    "contact": {
+      "id": "c_seed_209",
+      "email": "seed209@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-06T01:01:16.248Z",
+    "contact": {
+      "id": "c_seed_65",
+      "email": "seed65@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-06T01:21:16.545Z",
+    "contact": {
+      "id": "c_seed_241",
+      "email": "seed241@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-06T02:48:27.998Z",
+    "contact": {
+      "id": "c_seed_235",
+      "email": "seed235@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 3386,
+      "deal_id": "d_seed_235"
+    }
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-06T06:22:31.966Z",
+    "contact": {
+      "id": "c_seed_42",
+      "email": "seed42@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-06T07:29:05.400Z",
+    "contact": {
+      "id": "c_seed_18",
+      "email": "seed18@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-06T07:50:47.057Z",
+    "contact": {
+      "id": "c_seed_8",
+      "email": "seed8@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-06T08:52:15.284Z",
+    "contact": {
+      "id": "c_seed_10",
+      "email": "seed10@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-06T09:54:51.280Z",
+    "contact": {
+      "id": "c_seed_21",
+      "email": "seed21@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-06T13:10:56.168Z",
+    "contact": {
+      "id": "c_seed_139",
+      "email": "seed139@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-06T18:45:25.949Z",
+    "contact": {
+      "id": "c_seed_282",
+      "email": "seed282@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-06T22:27:01.185Z",
+    "contact": {
+      "id": "c_seed_153",
+      "email": "seed153@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 1333,
+      "deal_id": "d_seed_153"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-07T09:06:50.198Z",
+    "contact": {
+      "id": "c_seed_17",
+      "email": "seed17@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-07T13:57:45.829Z",
+    "contact": {
+      "id": "c_seed_57",
+      "email": "seed57@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-07T15:32:19.417Z",
+    "contact": {
+      "id": "c_seed_226",
+      "email": "seed226@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-08T17:36:21.014Z",
+    "contact": {
+      "id": "c_seed_301",
+      "email": "seed301@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-08T22:37:13.200Z",
+    "contact": {
+      "id": "c_seed_221",
+      "email": "seed221@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-09T06:18:42.036Z",
+    "contact": {
+      "id": "c_seed_144",
+      "email": "seed144@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-09T07:12:55.101Z",
+    "contact": {
+      "id": "c_seed_141",
+      "email": "seed141@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-09T10:40:32.053Z",
+    "contact": {
+      "id": "c_seed_293",
+      "email": "seed293@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 3395,
+      "deal_id": "d_seed_293"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-09T14:56:23.660Z",
+    "contact": {
+      "id": "c_seed_276",
+      "email": "seed276@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T01:55:47.359Z",
+    "contact": {
+      "id": "c_seed_309",
+      "email": "seed309@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-10T02:16:50.533Z",
+    "contact": {
+      "id": "c_seed_95",
+      "email": "seed95@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-10T04:11:41.717Z",
+    "contact": {
+      "id": "c_seed_215",
+      "email": "seed215@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T09:26:16.218Z",
+    "contact": {
+      "id": "c_seed_126",
+      "email": "seed126@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T11:20:00.208Z",
+    "contact": {
+      "id": "c_seed_43",
+      "email": "seed43@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T13:48:09.415Z",
+    "contact": {
+      "id": "c_seed_84",
+      "email": "seed84@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-10T14:16:32.328Z",
+    "contact": {
+      "id": "c_seed_175",
+      "email": "seed175@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-10T14:24:11.772Z",
+    "contact": {
+      "id": "c_seed_278",
+      "email": "seed278@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-10T15:34:36.801Z",
+    "contact": {
+      "id": "c_seed_237",
+      "email": "seed237@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T22:54:03.485Z",
+    "contact": {
+      "id": "c_seed_46",
+      "email": "seed46@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-10T23:37:33.107Z",
+    "contact": {
+      "id": "c_seed_99",
+      "email": "seed99@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-11T02:19:47.685Z",
+    "contact": {
+      "id": "c_seed_110",
+      "email": "seed110@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-11T09:07:57.569Z",
+    "contact": {
+      "id": "c_seed_317",
+      "email": "seed317@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-11T14:50:16.477Z",
+    "contact": {
+      "id": "c_seed_213",
+      "email": "seed213@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-11T15:02:12.137Z",
+    "contact": {
+      "id": "c_seed_313",
+      "email": "seed313@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-11T15:49:40.566Z",
+    "contact": {
+      "id": "c_seed_91",
+      "email": "seed91@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 3393,
+      "deal_id": "d_seed_91"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-11T17:00:32.501Z",
+    "contact": {
+      "id": "c_seed_228",
+      "email": "seed228@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-11T19:11:09.791Z",
+    "contact": {
+      "id": "c_seed_112",
+      "email": "seed112@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 1593,
+      "deal_id": "d_seed_112"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-11T21:16:45.896Z",
+    "contact": {
+      "id": "c_seed_232",
+      "email": "seed232@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-11T23:55:11.043Z",
+    "contact": {
+      "id": "c_seed_173",
+      "email": "seed173@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-12T11:08:44.391Z",
+    "contact": {
+      "id": "c_seed_114",
+      "email": "seed114@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-13T02:18:13.525Z",
+    "contact": {
+      "id": "c_seed_220",
+      "email": "seed220@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-13T12:26:05.627Z",
+    "contact": {
+      "id": "c_seed_31",
+      "email": "seed31@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 1610,
+      "deal_id": "d_seed_31"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-13T18:20:00.007Z",
+    "contact": {
+      "id": "c_seed_1",
+      "email": "seed1@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-13T19:39:50.285Z",
+    "contact": {
+      "id": "c_seed_192",
+      "email": "seed192@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-14T00:00:34.127Z",
+    "contact": {
+      "id": "c_seed_100",
+      "email": "seed100@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-14T00:45:20.885Z",
+    "contact": {
+      "id": "c_seed_210",
+      "email": "seed210@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-14T06:40:10.146Z",
+    "contact": {
+      "id": "c_seed_167",
+      "email": "seed167@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-14T18:30:52.639Z",
+    "contact": {
+      "id": "c_seed_216",
+      "email": "seed216@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-14T21:36:22.649Z",
+    "contact": {
+      "id": "c_seed_106",
+      "email": "seed106@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-14T22:45:24.343Z",
+    "contact": {
+      "id": "c_seed_211",
+      "email": "seed211@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-15T00:20:40.215Z",
+    "contact": {
+      "id": "c_seed_227",
+      "email": "seed227@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-15T10:02:00.186Z",
+    "contact": {
+      "id": "c_seed_120",
+      "email": "seed120@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-15T10:45:14.006Z",
+    "contact": {
+      "id": "c_seed_23",
+      "email": "seed23@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-15T14:46:15.111Z",
+    "contact": {
+      "id": "c_seed_24",
+      "email": "seed24@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-15T19:00:20.960Z",
+    "contact": {
+      "id": "c_seed_279",
+      "email": "seed279@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-15T20:54:44.328Z",
+    "contact": {
+      "id": "c_seed_32",
+      "email": "seed32@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-16T06:00:52.992Z",
+    "contact": {
+      "id": "c_seed_37",
+      "email": "seed37@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-16T07:38:18.888Z",
+    "contact": {
+      "id": "c_seed_258",
+      "email": "seed258@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-16T20:31:34.637Z",
+    "contact": {
+      "id": "c_seed_194",
+      "email": "seed194@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-17T02:55:30.725Z",
+    "contact": {
+      "id": "c_seed_88",
+      "email": "seed88@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-18T02:19:05.372Z",
+    "contact": {
+      "id": "c_seed_133",
+      "email": "seed133@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-18T07:06:04.056Z",
+    "contact": {
+      "id": "c_seed_129",
+      "email": "seed129@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-18T17:32:46.667Z",
+    "contact": {
+      "id": "c_seed_242",
+      "email": "seed242@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-19T01:14:31.225Z",
+    "contact": {
+      "id": "c_seed_244",
+      "email": "seed244@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-19T01:16:55.567Z",
+    "contact": {
+      "id": "c_seed_25",
+      "email": "seed25@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-19T11:50:07.390Z",
+    "contact": {
+      "id": "c_seed_303",
+      "email": "seed303@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-19T14:45:52.846Z",
+    "contact": {
+      "id": "c_seed_177",
+      "email": "seed177@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 1665,
+      "deal_id": "d_seed_177"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-19T17:24:02.699Z",
+    "contact": {
+      "id": "c_seed_27",
+      "email": "seed27@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-19T18:43:02.484Z",
+    "contact": {
+      "id": "c_seed_290",
+      "email": "seed290@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-19T20:13:42.782Z",
+    "contact": {
+      "id": "c_seed_30",
+      "email": "seed30@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-20T20:11:07.882Z",
+    "contact": {
+      "id": "c_seed_11",
+      "email": "seed11@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-20T22:27:37.112Z",
+    "contact": {
+      "id": "c_seed_62",
+      "email": "seed62@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-21T01:05:23.068Z",
+    "contact": {
+      "id": "c_seed_200",
+      "email": "seed200@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-21T21:16:16.296Z",
+    "contact": {
+      "id": "c_seed_195",
+      "email": "seed195@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-21T22:26:22.806Z",
+    "contact": {
+      "id": "c_seed_132",
+      "email": "seed132@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-22T17:35:10.212Z",
+    "contact": {
+      "id": "c_seed_149",
+      "email": "seed149@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-23T08:32:08.665Z",
+    "contact": {
+      "id": "c_seed_5",
+      "email": "seed5@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-23T16:36:38.510Z",
+    "contact": {
+      "id": "c_seed_212",
+      "email": "seed212@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-23T18:48:22.501Z",
+    "contact": {
+      "id": "c_seed_83",
+      "email": "seed83@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-24T02:16:05.275Z",
+    "contact": {
+      "id": "c_seed_288",
+      "email": "seed288@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-24T05:50:35.253Z",
+    "contact": {
+      "id": "c_seed_189",
+      "email": "seed189@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-24T06:11:36.511Z",
+    "contact": {
+      "id": "c_seed_217",
+      "email": "seed217@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-24T12:00:12.196Z",
+    "contact": {
+      "id": "c_seed_96",
+      "email": "seed96@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-25T06:36:06.936Z",
+    "contact": {
+      "id": "c_seed_155",
+      "email": "seed155@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-25T20:46:21.670Z",
+    "contact": {
+      "id": "c_seed_15",
+      "email": "seed15@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-26T00:29:02.467Z",
+    "contact": {
+      "id": "c_seed_229",
+      "email": "seed229@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-26T23:17:12.860Z",
+    "contact": {
+      "id": "c_seed_41",
+      "email": "seed41@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 1132,
+      "deal_id": "d_seed_41"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-27T00:47:45.489Z",
+    "contact": {
+      "id": "c_seed_50",
+      "email": "seed50@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-27T03:57:41.951Z",
+    "contact": {
+      "id": "c_seed_236",
+      "email": "seed236@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-27T04:04:44.037Z",
+    "contact": {
+      "id": "c_seed_172",
+      "email": "seed172@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-27T14:23:13.533Z",
+    "contact": {
+      "id": "c_seed_280",
+      "email": "seed280@example.com"
+    },
+    "properties": {
+      "channel": "direct",
+      "amount": 1248,
+      "deal_id": "d_seed_280"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-27T16:36:40.373Z",
+    "contact": {
+      "id": "c_seed_9",
+      "email": "seed9@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-27T17:11:25.174Z",
+    "contact": {
+      "id": "c_seed_250",
+      "email": "seed250@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-28T08:12:32.997Z",
+    "contact": {
+      "id": "c_seed_196",
+      "email": "seed196@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-28T16:38:04.435Z",
+    "contact": {
+      "id": "c_seed_148",
+      "email": "seed148@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-07-29T13:44:53.834Z",
+    "contact": {
+      "id": "c_seed_53",
+      "email": "seed53@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-07-29T18:37:30.578Z",
+    "contact": {
+      "id": "c_seed_182",
+      "email": "seed182@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-29T19:45:44.300Z",
+    "contact": {
+      "id": "c_seed_178",
+      "email": "seed178@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-30T05:12:48.598Z",
+    "contact": {
+      "id": "c_seed_284",
+      "email": "seed284@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-30T07:35:11.389Z",
+    "contact": {
+      "id": "c_seed_318",
+      "email": "seed318@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-07-30T08:52:43.541Z",
+    "contact": {
+      "id": "c_seed_28",
+      "email": "seed28@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-30T16:38:40.694Z",
+    "contact": {
+      "id": "c_seed_319",
+      "email": "seed319@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-07-31T10:54:59.037Z",
+    "contact": {
+      "id": "c_seed_135",
+      "email": "seed135@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 943,
+      "deal_id": "d_seed_135"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-07-31T13:37:06.509Z",
+    "contact": {
+      "id": "c_seed_76",
+      "email": "seed76@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-01T23:10:46.126Z",
+    "contact": {
+      "id": "c_seed_310",
+      "email": "seed310@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 2907,
+      "deal_id": "d_seed_310"
+    }
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-02T00:57:08.211Z",
+    "contact": {
+      "id": "c_seed_44",
+      "email": "seed44@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-02T06:43:42.843Z",
+    "contact": {
+      "id": "c_seed_299",
+      "email": "seed299@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-02T12:59:04.012Z",
+    "contact": {
+      "id": "c_seed_108",
+      "email": "seed108@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-02T16:37:40.815Z",
+    "contact": {
+      "id": "c_seed_261",
+      "email": "seed261@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-02T22:53:06.759Z",
+    "contact": {
+      "id": "c_seed_231",
+      "email": "seed231@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-03T00:23:37.283Z",
+    "contact": {
+      "id": "c_seed_80",
+      "email": "seed80@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 1024,
+      "deal_id": "d_seed_80"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-03T03:30:41.843Z",
+    "contact": {
+      "id": "c_seed_45",
+      "email": "seed45@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-03T13:43:32.832Z",
+    "contact": {
+      "id": "c_seed_86",
+      "email": "seed86@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-03T19:08:34.826Z",
+    "contact": {
+      "id": "c_seed_255",
+      "email": "seed255@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-03T21:47:17.342Z",
+    "contact": {
+      "id": "c_seed_292",
+      "email": "seed292@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 1518,
+      "deal_id": "d_seed_292"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-04T00:49:45.103Z",
+    "contact": {
+      "id": "c_seed_240",
+      "email": "seed240@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-04T16:12:54.159Z",
+    "contact": {
+      "id": "c_seed_59",
+      "email": "seed59@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-04T22:43:34.499Z",
+    "contact": {
+      "id": "c_seed_117",
+      "email": "seed117@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 2637,
+      "deal_id": "d_seed_117"
+    }
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-05T01:09:29.534Z",
+    "contact": {
+      "id": "c_seed_73",
+      "email": "seed73@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 1181,
+      "deal_id": "d_seed_73"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-05T07:56:02.940Z",
+    "contact": {
+      "id": "c_seed_266",
+      "email": "seed266@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-05T09:18:33.768Z",
+    "contact": {
+      "id": "c_seed_214",
+      "email": "seed214@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-05T13:17:30.311Z",
+    "contact": {
+      "id": "c_seed_90",
+      "email": "seed90@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-05T23:49:05.208Z",
+    "contact": {
+      "id": "c_seed_202",
+      "email": "seed202@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-06T02:34:29.642Z",
+    "contact": {
+      "id": "c_seed_157",
+      "email": "seed157@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-06T10:14:51.460Z",
+    "contact": {
+      "id": "c_seed_35",
+      "email": "seed35@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-06T10:27:36.900Z",
+    "contact": {
+      "id": "c_seed_296",
+      "email": "seed296@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-06T13:12:48.524Z",
+    "contact": {
+      "id": "c_seed_137",
+      "email": "seed137@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-06T17:29:09.631Z",
+    "contact": {
+      "id": "c_seed_102",
+      "email": "seed102@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-06T20:35:03.143Z",
+    "contact": {
+      "id": "c_seed_22",
+      "email": "seed22@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-07T16:18:03.293Z",
+    "contact": {
+      "id": "c_seed_52",
+      "email": "seed52@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-07T19:45:57.189Z",
+    "contact": {
+      "id": "c_seed_252",
+      "email": "seed252@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-08T09:43:26.542Z",
+    "contact": {
+      "id": "c_seed_174",
+      "email": "seed174@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-09T03:40:16.617Z",
+    "contact": {
+      "id": "c_seed_180",
+      "email": "seed180@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-10T06:15:14.574Z",
+    "contact": {
+      "id": "c_seed_274",
+      "email": "seed274@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-10T14:41:14.197Z",
+    "contact": {
+      "id": "c_seed_262",
+      "email": "seed262@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-10T15:56:24.271Z",
+    "contact": {
+      "id": "c_seed_222",
+      "email": "seed222@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-10T16:02:16.601Z",
+    "contact": {
+      "id": "c_seed_81",
+      "email": "seed81@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-10T17:18:43.452Z",
+    "contact": {
+      "id": "c_seed_245",
+      "email": "seed245@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-10T20:51:06.254Z",
+    "contact": {
+      "id": "c_seed_6",
+      "email": "seed6@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-12T05:33:41.350Z",
+    "contact": {
+      "id": "c_seed_61",
+      "email": "seed61@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-12T12:19:13.203Z",
+    "contact": {
+      "id": "c_seed_159",
+      "email": "seed159@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-13T18:18:55.572Z",
+    "contact": {
+      "id": "c_seed_146",
+      "email": "seed146@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 674,
+      "deal_id": "d_seed_146"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-13T18:47:41.011Z",
+    "contact": {
+      "id": "c_seed_122",
+      "email": "seed122@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-14T10:55:01.820Z",
+    "contact": {
+      "id": "c_seed_98",
+      "email": "seed98@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-14T15:57:09.799Z",
+    "contact": {
+      "id": "c_seed_105",
+      "email": "seed105@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-14T23:24:37.451Z",
+    "contact": {
+      "id": "c_seed_281",
+      "email": "seed281@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-14T23:53:39.834Z",
+    "contact": {
+      "id": "c_seed_40",
+      "email": "seed40@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-15T06:21:32.548Z",
+    "contact": {
+      "id": "c_seed_170",
+      "email": "seed170@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-15T08:54:28.614Z",
+    "contact": {
+      "id": "c_seed_0",
+      "email": "seed0@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-15T17:50:03.055Z",
+    "contact": {
+      "id": "c_seed_97",
+      "email": "seed97@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 3383,
+      "deal_id": "d_seed_97"
+    }
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-15T18:57:09.485Z",
+    "contact": {
+      "id": "c_seed_265",
+      "email": "seed265@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 1594,
+      "deal_id": "d_seed_265"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-16T04:46:27.138Z",
+    "contact": {
+      "id": "c_seed_123",
+      "email": "seed123@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-16T06:26:42.892Z",
+    "contact": {
+      "id": "c_seed_164",
+      "email": "seed164@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-16T07:20:26.949Z",
+    "contact": {
+      "id": "c_seed_118",
+      "email": "seed118@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-16T10:09:34.589Z",
+    "contact": {
+      "id": "c_seed_161",
+      "email": "seed161@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-16T10:37:34.580Z",
+    "contact": {
+      "id": "c_seed_156",
+      "email": "seed156@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 3145,
+      "deal_id": "d_seed_156"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-17T01:49:41.331Z",
+    "contact": {
+      "id": "c_seed_64",
+      "email": "seed64@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-17T02:56:14.695Z",
+    "contact": {
+      "id": "c_seed_260",
+      "email": "seed260@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-17T05:27:51.508Z",
+    "contact": {
+      "id": "c_seed_205",
+      "email": "seed205@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-17T06:05:34.921Z",
+    "contact": {
+      "id": "c_seed_286",
+      "email": "seed286@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-17T08:20:31.227Z",
+    "contact": {
+      "id": "c_seed_289",
+      "email": "seed289@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-17T20:39:03.615Z",
+    "contact": {
+      "id": "c_seed_72",
+      "email": "seed72@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-18T04:33:02.959Z",
+    "contact": {
+      "id": "c_seed_107",
+      "email": "seed107@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-18T17:25:33.657Z",
+    "contact": {
+      "id": "c_seed_248",
+      "email": "seed248@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-18T23:15:51.530Z",
+    "contact": {
+      "id": "c_seed_38",
+      "email": "seed38@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-19T01:21:39.178Z",
+    "contact": {
+      "id": "c_seed_253",
+      "email": "seed253@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-19T16:52:37.374Z",
+    "contact": {
+      "id": "c_seed_48",
+      "email": "seed48@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 2476,
+      "deal_id": "d_seed_48"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-19T19:05:12.124Z",
+    "contact": {
+      "id": "c_seed_160",
+      "email": "seed160@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-19T21:22:13.841Z",
+    "contact": {
+      "id": "c_seed_183",
+      "email": "seed183@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-20T02:52:09.925Z",
+    "contact": {
+      "id": "c_seed_93",
+      "email": "seed93@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-20T07:44:43.234Z",
+    "contact": {
+      "id": "c_seed_128",
+      "email": "seed128@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-21T12:12:18.044Z",
+    "contact": {
+      "id": "c_seed_147",
+      "email": "seed147@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-21T18:23:48.018Z",
+    "contact": {
+      "id": "c_seed_162",
+      "email": "seed162@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-21T21:15:03.823Z",
+    "contact": {
+      "id": "c_seed_49",
+      "email": "seed49@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-21T23:53:06.227Z",
+    "contact": {
+      "id": "c_seed_124",
+      "email": "seed124@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-22T12:35:11.241Z",
+    "contact": {
+      "id": "c_seed_85",
+      "email": "seed85@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "contact.birthday",
+    "occurred_at": "2026-08-22T16:19:39.240Z",
+    "contact": {
+      "id": "c_seed_19",
+      "email": "seed19@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-22T16:21:53.831Z",
+    "contact": {
+      "id": "c_seed_169",
+      "email": "seed169@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-22T18:03:43.058Z",
+    "contact": {
+      "id": "c_seed_104",
+      "email": "seed104@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-23T01:39:03.767Z",
+    "contact": {
+      "id": "c_seed_138",
+      "email": "seed138@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-23T03:32:00.706Z",
+    "contact": {
+      "id": "c_seed_263",
+      "email": "seed263@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-23T04:03:07.866Z",
+    "contact": {
+      "id": "c_seed_78",
+      "email": "seed78@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-23T07:33:07.480Z",
+    "contact": {
+      "id": "c_seed_267",
+      "email": "seed267@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-23T12:29:26.441Z",
+    "contact": {
+      "id": "c_seed_204",
+      "email": "seed204@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-23T14:29:11.677Z",
+    "contact": {
+      "id": "c_seed_77",
+      "email": "seed77@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-23T18:51:42.345Z",
+    "contact": {
+      "id": "c_seed_70",
+      "email": "seed70@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-24T00:56:17.987Z",
+    "contact": {
+      "id": "c_seed_74",
+      "email": "seed74@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-24T06:39:18.925Z",
+    "contact": {
+      "id": "c_seed_68",
+      "email": "seed68@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-24T16:21:03.683Z",
+    "contact": {
+      "id": "c_seed_187",
+      "email": "seed187@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-24T16:55:44.689Z",
+    "contact": {
+      "id": "c_seed_87",
+      "email": "seed87@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-25T04:01:31.301Z",
+    "contact": {
+      "id": "c_seed_163",
+      "email": "seed163@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-25T06:46:29.907Z",
+    "contact": {
+      "id": "c_seed_254",
+      "email": "seed254@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-25T13:04:12.364Z",
+    "contact": {
+      "id": "c_seed_116",
+      "email": "seed116@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-25T19:30:15.795Z",
+    "contact": {
+      "id": "c_seed_136",
+      "email": "seed136@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-26T04:29:34.901Z",
+    "contact": {
+      "id": "c_seed_257",
+      "email": "seed257@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 1053,
+      "deal_id": "d_seed_257"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-26T10:02:16.001Z",
+    "contact": {
+      "id": "c_seed_2",
+      "email": "seed2@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-26T15:22:22.198Z",
+    "contact": {
+      "id": "c_seed_249",
+      "email": "seed249@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-26T19:06:09.035Z",
+    "contact": {
+      "id": "c_seed_94",
+      "email": "seed94@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-27T03:04:03.557Z",
+    "contact": {
+      "id": "c_seed_150",
+      "email": "seed150@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-27T05:03:05.058Z",
+    "contact": {
+      "id": "c_seed_29",
+      "email": "seed29@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-27T05:57:03.098Z",
+    "contact": {
+      "id": "c_seed_145",
+      "email": "seed145@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-27T10:11:20.780Z",
+    "contact": {
+      "id": "c_seed_69",
+      "email": "seed69@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-27T20:46:21.157Z",
+    "contact": {
+      "id": "c_seed_268",
+      "email": "seed268@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-27T22:29:10.341Z",
+    "contact": {
+      "id": "c_seed_302",
+      "email": "seed302@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-28T09:02:16.391Z",
+    "contact": {
+      "id": "c_seed_184",
+      "email": "seed184@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-29T10:06:00.736Z",
+    "contact": {
+      "id": "c_seed_291",
+      "email": "seed291@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 689,
+      "deal_id": "d_seed_291"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-29T21:59:09.768Z",
+    "contact": {
+      "id": "c_seed_272",
+      "email": "seed272@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-08-30T14:11:32.400Z",
+    "contact": {
+      "id": "c_seed_151",
+      "email": "seed151@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-30T14:40:43.618Z",
+    "contact": {
+      "id": "c_seed_121",
+      "email": "seed121@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-30T20:03:23.625Z",
+    "contact": {
+      "id": "c_seed_47",
+      "email": "seed47@example.com"
+    },
+    "properties": {
+      "channel": "paid",
+      "amount": 3239,
+      "deal_id": "d_seed_47"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-30T22:52:09.862Z",
+    "contact": {
+      "id": "c_seed_207",
+      "email": "seed207@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-31T01:56:48.568Z",
+    "contact": {
+      "id": "c_seed_186",
+      "email": "seed186@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-08-31T03:41:00.068Z",
+    "contact": {
+      "id": "c_seed_7",
+      "email": "seed7@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-08-31T16:32:34.278Z",
+    "contact": {
+      "id": "c_seed_56",
+      "email": "seed56@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-08-31T18:35:25.950Z",
+    "contact": {
+      "id": "c_seed_223",
+      "email": "seed223@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 2458,
+      "deal_id": "d_seed_223"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-01T03:09:25.881Z",
+    "contact": {
+      "id": "c_seed_188",
+      "email": "seed188@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-09-01T19:44:10.605Z",
+    "contact": {
+      "id": "c_seed_201",
+      "email": "seed201@example.com"
+    },
+    "properties": {
+      "channel": "social",
+      "amount": 1181,
+      "deal_id": "d_seed_201"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-03T02:47:26.769Z",
+    "contact": {
+      "id": "c_seed_176",
+      "email": "seed176@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-03T02:48:11.240Z",
+    "contact": {
+      "id": "c_seed_54",
+      "email": "seed54@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-09-03T02:55:57.615Z",
+    "contact": {
+      "id": "c_seed_113",
+      "email": "seed113@example.com"
+    },
+    "properties": {
+      "channel": "direct",
+      "amount": 2030,
+      "deal_id": "d_seed_113"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-03T16:32:36.916Z",
+    "contact": {
+      "id": "c_seed_36",
+      "email": "seed36@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-04T04:12:24.979Z",
+    "contact": {
+      "id": "c_seed_206",
+      "email": "seed206@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-04T06:44:49.007Z",
+    "contact": {
+      "id": "c_seed_142",
+      "email": "seed142@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-04T11:14:30.450Z",
+    "contact": {
+      "id": "c_seed_119",
+      "email": "seed119@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-04T18:42:55.370Z",
+    "contact": {
+      "id": "c_seed_101",
+      "email": "seed101@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-05T04:12:20.809Z",
+    "contact": {
+      "id": "c_seed_4",
+      "email": "seed4@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-05T10:37:50.670Z",
+    "contact": {
+      "id": "c_seed_166",
+      "email": "seed166@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-09-05T15:35:53.040Z",
+    "contact": {
+      "id": "c_seed_75",
+      "email": "seed75@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-09-06T06:23:58.337Z",
+    "contact": {
+      "id": "c_seed_26",
+      "email": "seed26@example.com"
+    },
+    "properties": {
+      "channel": "automation",
+      "amount": 2187,
+      "deal_id": "d_seed_26"
+    }
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-06T13:48:46.545Z",
+    "contact": {
+      "id": "c_seed_304",
+      "email": "seed304@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-09-06T14:20:40.417Z",
+    "contact": {
+      "id": "c_seed_39",
+      "email": "seed39@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-07T06:28:18.703Z",
+    "contact": {
+      "id": "c_seed_55",
+      "email": "seed55@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-07T15:38:35.083Z",
+    "contact": {
+      "id": "c_seed_225",
+      "email": "seed225@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-08T05:48:31.290Z",
+    "contact": {
+      "id": "c_seed_308",
+      "email": "seed308@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-08T06:47:43.607Z",
+    "contact": {
+      "id": "c_seed_203",
+      "email": "seed203@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-09-08T14:12:24.479Z",
+    "contact": {
+      "id": "c_seed_230",
+      "email": "seed230@example.com"
+    },
+    "properties": {
+      "channel": "direct",
+      "amount": 468,
+      "deal_id": "d_seed_230"
+    }
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-09T00:24:13.630Z",
+    "contact": {
+      "id": "c_seed_208",
+      "email": "seed208@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-09T23:57:51.947Z",
+    "contact": {
+      "id": "c_seed_154",
+      "email": "seed154@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-10T02:16:38.217Z",
+    "contact": {
+      "id": "c_seed_285",
+      "email": "seed285@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-11T01:51:30.077Z",
+    "contact": {
+      "id": "c_seed_168",
+      "email": "seed168@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-11T18:44:11.521Z",
+    "contact": {
+      "id": "c_seed_171",
+      "email": "seed171@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-11T21:27:45.050Z",
+    "contact": {
+      "id": "c_seed_193",
+      "email": "seed193@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-12T03:56:20.301Z",
+    "contact": {
+      "id": "c_seed_152",
+      "email": "seed152@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-12T15:43:35.338Z",
+    "contact": {
+      "id": "c_seed_306",
+      "email": "seed306@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-12T18:32:16.303Z",
+    "contact": {
+      "id": "c_seed_125",
+      "email": "seed125@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-12T19:33:27.142Z",
+    "contact": {
+      "id": "c_seed_307",
+      "email": "seed307@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "deal.won",
+    "occurred_at": "2026-09-12T23:15:25.690Z",
+    "contact": {
+      "id": "c_seed_16",
+      "email": "seed16@example.com"
+    },
+    "properties": {
+      "channel": "seo",
+      "amount": 1912,
+      "deal_id": "d_seed_16"
+    }
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-09-13T15:05:30.595Z",
+    "contact": {
+      "id": "c_seed_239",
+      "email": "seed239@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-14T05:44:36.963Z",
+    "contact": {
+      "id": "c_seed_63",
+      "email": "seed63@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-14T20:55:27.512Z",
+    "contact": {
+      "id": "c_seed_130",
+      "email": "seed130@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-09-15T01:29:51.739Z",
+    "contact": {
+      "id": "c_seed_298",
+      "email": "seed298@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-15T11:33:45.601Z",
+    "contact": {
+      "id": "c_seed_12",
+      "email": "seed12@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-15T11:40:47.031Z",
+    "contact": {
+      "id": "c_seed_256",
+      "email": "seed256@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-15T14:38:51.015Z",
+    "contact": {
+      "id": "c_seed_58",
+      "email": "seed58@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-15T14:50:30.336Z",
+    "contact": {
+      "id": "c_seed_71",
+      "email": "seed71@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-15T15:06:39.252Z",
+    "contact": {
+      "id": "c_seed_316",
+      "email": "seed316@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "cart.abandoned",
+    "occurred_at": "2026-09-15T15:41:19.177Z",
+    "contact": {
+      "id": "c_seed_33",
+      "email": "seed33@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "catalog.downloaded",
+    "occurred_at": "2026-09-16T08:14:33.759Z",
+    "contact": {
+      "id": "c_seed_275",
+      "email": "seed275@example.com"
+    },
+    "properties": {}
+  },
+  {
+    "event": "form.submitted",
+    "occurred_at": "2026-09-16T10:22:56.970Z",
+    "contact": {
+      "id": "c_seed_300",
+      "email": "seed300@example.com"
+    },
+    "properties": {}
+  }
+]
